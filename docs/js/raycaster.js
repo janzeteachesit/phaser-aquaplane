@@ -72,7 +72,7 @@ and https://github.com/hunterloftis/playfuljs-demos/blob/gh-pages/raycaster/inde
    this.x = x;
    this.y = y;
    this.direction = direction;
-   this.weapon = new Bitmap('assets/images/knife_hand.png', 319, 320);
+   this.weapon = new Bitmap('./assets/images/knife_hand.png', 319, 320);
    this.paces = 0;
  }
 
@@ -98,8 +98,8 @@ and https://github.com/hunterloftis/playfuljs-demos/blob/gh-pages/raycaster/inde
  function Map(size) {
    this.size = size;
    this.wallGrid = new Uint8Array(size * size);
-   this.skybox = new Bitmap('assets/images/deathvalley_panorama.jpg', 2000, 750);
-   this.wallTexture = new Bitmap('assets/images/wall_texture.jpg', 1024, 1024);
+   this.skybox = new Bitmap('./assets/images/deathvalley_panorama.jpg', 2000, 750);
+   this.wallTexture = new Bitmap('./assets/images/wall_texture.jpg', 1024, 1024);
    this.light = 0;
  }
 
