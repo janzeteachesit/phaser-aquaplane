@@ -14,7 +14,7 @@ Aquaplane.Preloader.prototype = {
 
     preload: function () {
 
-        this.load.path = '../assets/';
+        this.load.path = '/assets/';
 
         this.load.bitmapFont('fat-and-tiny');
         this.load.bitmapFont('interfont');
