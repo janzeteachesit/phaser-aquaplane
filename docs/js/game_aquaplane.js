@@ -14,7 +14,7 @@ Aquaplane.Preloader.prototype = {
 
     preload: function () {
 
-        this.load.path = '/assets/';
+        this.load.path = '../assets/';
 
         this.load.bitmapFont('fat-and-tiny');
         this.load.bitmapFont('interfont');
@@ -486,7 +486,7 @@ Aquaplane.Game.prototype = {
 
 };
 
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game_aquaplane');
 
 game.state.add('Aquaplane.Preloader', Aquaplane.Preloader);
 game.state.add('Aquaplane.MainMenu', Aquaplane.MainMenu);
